@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>1920s Speakeasy Party Invite</title>
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
     <div class="invite">
-        <h1>You're Invited to the Bootlegger's Ball!</h1>
-        <p>Join us for a night of jazz, cocktails, and fun!</p>
-        <section class="event-details">
-            <h2>Event Details</h2>
-            <input type="number" id="shift-number" placeholder="Enter shift number">
-            <button id="decrypt-button">Decrypt Event Details</button>
-            <p id="encrypted-details">Byrc ylb Rgkc: 7nk Hylsypw 25rf, 2024</p>
-            <p id="encrypted-details-2">Vkog: 7:00 OK - Kphkijv</p>
-            <p id="encrypted-details-3">Nqecvkqp: Vjg Jkffgp Nqwpig, 123 Ockp Uv, Cpvaqyp</p>
-            <p id="decrypted-details" style="display: none;"></p>
-        </section>
-        <section class="secret-message">
-            <p id="message"></p>
-            <p id="reveal-code" style="cursor: pointer">Shhhhhhhh!</p>
-            <p id="hidden-code" style="display: none;">You are Cordially Invited, use code 'BOOTLEGBOOTLEGRUMRUMRUM' for entry </p>
-        </section>
-
-    </div> 
-    <footer>
-      <p>Secret Skate Society</p>
-    
-  </footer>
+      <h1>You're Invited to the Bootlegger's Ball!</h1>
+      <p>Join us for a night of jazz, cocktails, and fun!</p>
+      <section class="event-details">
+        <h2>Event Details</h2>
+        <input type="number" id="shift-number" placeholder="Code number" />
+        <button id="decrypt-button">Decrypt</button>
+        <!-- Date: January twenty fifth 2025 -->
+        <p class="encrypted-details">Byrc: Hylsypw Ruclrw-Dgdrf, 2025</p>
+        <!-- Time: 7pm to late -->
+        <p class="encrypted-details">Rgkc: Qctcl nk rm Jyrc</p>
+        <!-- Location: Forty Four Summer Street -->
+        <p class="encrypted-details">
+          Jmayrgml: Dmprw-Dmsp Qskkcp Qrpccr, Afypjmrrcrmul
+        </p>
+        <!-- Welcome to the time of prohibition, do you have the entry code?.. -->
+        <p class="encrypted-details">Ucjamkc rm rfc rgkc md npmfgzgrgml, bm wms fytc rfc clrpw ambc?..</p>
+        <div id="decrypted-details-container" style="display: none"></div>
+      </section>
+      <section id="secret-message" style="display: none">
+        <p id="message"></p>
+        <p id="reveal-code" style="cursor: pointer">Shhhhhhhh!</p>
+        <p id="hidden-code" style="display: none">
+          You are Cordially Invited, use code 'BOOTLEGBOOTLEGRUMRUMRUM' for
+          entry
+        </p>
+      </section>
+    </div>
     <script src="scripts/main.js"></script>
-</body>
+  </body>
 </html>
