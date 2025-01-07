@@ -31,7 +31,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 4em;
   margin: 10px 0;
   font-family: "Monoton", serif;
   font-weight: 400;
@@ -59,7 +59,8 @@ footer {
 
 button {
   background-color: #d6aa66;
-  color: #2c2a29;
+  color: #2c2a29; 
+  width: calc(100% - 24px);
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -75,7 +76,8 @@ button:hover {
 input#shift-number {
     padding: 10px;
     margin: 10px 0;
-    border: 2px solid #ccc;
+    border: 2px solid #ccc; 
+    text-align: center ;
     border-radius: 5px;
     width: calc(100% - 24px); /* Adjust width to account for padding and border */
     font-size: 16px;
