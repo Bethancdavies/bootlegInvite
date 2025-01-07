@@ -42,15 +42,18 @@ section {
     border: 2px solid #f5f5dc;
     border-radius: 10px;
     background-color: #3e3b36;
+    opacity: 70%;
+    
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #8b5a2b;
+    background-color: #12224b;
     position: fixed;
-    width: 100%;
+    width: 100%; 
     bottom: 0;
+
 }
 
 button {

@@ -1,46 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Speakeasy Party Invite</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <h1>You're Invited to a 1920s Speakeasy Party!</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1920s Speakeasy Party Invite</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="invite">
+        <h1>You're Invited to the Bootlegger's Ball!</h1>
         <p>Join us for a night of jazz, cocktails, and fun!</p>
-      </header>
-      <section class="event-details">
-        <h2>Event Details</h2>
-        <p><strong>Date:</strong> Saturday, March 25, 2023</p>
-        <p><strong>Time:</strong> 7:00 PM - Midnight</p>
-        <p>
-          <strong>Location:</strong> The Hidden Lounge, 123 Main St, Anytown
-        </p>
-      </section>
-      <section class="secrtMessage">
-        <p id="message"></p>
-        <p id="reveal-code" style="cursor: pointer; color: blue">
-          Click here for a surprise!
-        </p>
-        <p id="hidden-code" style="display: none">
-          Your secret code is: 1920SPEAKEASY
-        </p>
-      </section>
+        <section class="event-details">
+            <h2>Event Details</h2>
+            <input type="number" id="shift-number" placeholder="Enter shift number">
+            <button id="decrypt-button">Decrypt Event Details</button>
+            <p id="encrypted-details">Byrc ylb Rgkc: 7nk Hylsypw 25rf, 2024</p>
+            <p id="encrypted-details-2">Vkog: 7:00 OK - Kphkijv</p>
+            <p id="encrypted-details-3">Nqecvkqp: Vjg Jkffgp Nqwpig, 123 Ockp Uv, Cpvaqyp</p>
+            <p id="decrypted-details" style="display: none;"></p>
+        </section>
+        <section class="secret-message">
+            <p id="message"></p>
+            <p id="reveal-code" style="cursor: pointer; color: blue;">Click here for a surprise!</p>
+            <p id="hidden-code" style="display: none;">Your secret code is: 1920SPEAKEASY</p>
+        </section>
 
-      <footer>
-        <p>Dress Code: Flapper dresses and dapper suits encouraged!</p>
-        <p>We can't wait to see you there!</p>
-      </footer>
-    </div>
+    </div> 
+    <footer>
+      <p>Dress Code: Flapper dresses and dapper suits encouraged!</p>
+      <p>We can't wait to see you there!</p>
+  </footer>
     <script src="scripts/main.js"></script>
-  </body>
+</body>
 </html>
