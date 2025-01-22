@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const revealCode = document.getElementById("reveal-code");
   const hiddenCode = document.getElementById("hidden-code");
   const hiddenCodeSection = this.getElementById("secret-message")
   const decryptButton = document.getElementById("decrypt-button");
@@ -9,9 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
     "decrypted-details-container"
   );
 
-  revealCode.addEventListener("click", function () {
-    hiddenCode.style.display = "block";
-  });
 
   decryptButton.addEventListener("click", function () {
     const shift = parseInt(shiftNumber.value);
@@ -29,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     shift = shift % 26; // Ensure the shift is within the range of 0-25
     if (shift == 24) { //if the number is the correct number, then show message block
         hiddenCodeSection.style.display = "block"; 
+        hiddenCode.style.display = "block";
        encryptedDetails.forEach(detail => {
          detail.style.display = "none";        
  

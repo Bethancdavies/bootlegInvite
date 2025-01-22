@@ -53,6 +53,9 @@ h1{
     width: calc(100% - 24px);
   }
 }
+.yellowfont{
+  color: #d6aa66;
+}
 
 section {
   padding: 20px;
