@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
   const hiddenCode = document.getElementById("hidden-code");
-  const hiddenCodeSection = this.getElementById("secret-message");
   const decryptButton = document.getElementById("decrypt-button");
   const shiftNumber = document.getElementById("shift-number");
   const encryptedDetails = document.querySelectorAll(".encrypted-details"); 
@@ -25,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
     shift = shift % 26; // Ensure the shift is within the range of 0-25
     if (shift == 10) {
       //if the number is the correct number, then show message block
-      hiddenCodeSection.style.display = "block";
       hiddenCode.style.display = "block";  
       disappearingDiv.style.display = "none";
       
