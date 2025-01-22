@@ -1,13 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
   const hiddenCode = document.getElementById("hidden-code");
-  const hiddenCodeSection = this.getElementById("secret-message")
+  const hiddenCodeSection = this.getElementById("secret-message");
   const decryptButton = document.getElementById("decrypt-button");
   const shiftNumber = document.getElementById("shift-number");
   const encryptedDetails = document.querySelectorAll(".encrypted-details");
   const decryptedDetailsContainer = document.getElementById(
     "decrypted-details-container"
   );
-
 
   decryptButton.addEventListener("click", function () {
     const shift = parseInt(shiftNumber.value);
@@ -23,13 +22,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function caesarCipherDecrypt(text, shift) {
     shift = shift % 26; // Ensure the shift is within the range of 0-25
-    if (shift == 24) { //if the number is the correct number, then show message block
-        hiddenCodeSection.style.display = "block"; 
-        hiddenCode.style.display = "block";
-       encryptedDetails.forEach(detail => {
-         detail.style.display = "none";        
- 
-       });
+    if (shift == 10) {
+      //if the number is the correct number, then show message block
+      hiddenCodeSection.style.display = "block";
+      hiddenCode.style.display = "block";
+      encryptedDetails.forEach((detail) => {
+        detail.style.display = "none";
+      });
     }
     return text
       .split("")
