@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const hiddenCodeSection = this.getElementById("secret-message");
   const decryptButton = document.getElementById("decrypt-button");
   const shiftNumber = document.getElementById("shift-number");
-  const encryptedDetails = document.querySelectorAll(".encrypted-details");
+  const encryptedDetails = document.querySelectorAll(".encrypted-details"); 
+  const disappearingDiv = document.getElementById("disappearing-div");
   const decryptedDetailsContainer = document.getElementById(
     "decrypted-details-container"
   );
@@ -25,7 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (shift == 10) {
       //if the number is the correct number, then show message block
       hiddenCodeSection.style.display = "block";
-      hiddenCode.style.display = "block";
+      hiddenCode.style.display = "block";  
+      disappearingDiv.style.display = "none";
+      
       encryptedDetails.forEach((detail) => {
         detail.style.display = "none";
       });

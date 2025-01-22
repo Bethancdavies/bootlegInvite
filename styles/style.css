@@ -59,16 +59,26 @@ p {
   .invite {
     width: 90%;
     margin-top: 10px;
+  }
+  #hidden-code {
+    font-size: 0.9em;
+  }
+  .event-details {
+    margin: 0px;
+  } 
+  #secret-message {
+    margin: 5px 0px 0px 0px; 
+  }
 }
-  }
 
-  #decrypt-button,
-  #shift-number {
-    width: calc(100% - 24px);
-  }
+#decrypt-button,
+#shift-number {
+  width: calc(100% - 24px);
+}
 
 .yellowfont,
-.cypherText {
+.cypher-text,
+#hidden-code {
   color: #d6aa66;
 }
 
