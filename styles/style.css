@@ -10,7 +10,7 @@ body {
 .invite {
   background-color: rgba(26, 26, 26, 0.8); /* Semi-transparent background */
   border: 2px solid #f5f5f5;
-  padding: 20px; 
+  padding: 20px;
   width: 80%;
   border-radius: 10px;
   display: inline-block;
@@ -38,22 +38,30 @@ h2 {
   font-weight: 400;
   font-style: normal;
   color: #d6aa66;
-} 
-@media (max-width: 750px) {
-h1{
-    font-size: 3rem;
 }
+
+p {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+@media (max-width: 750px) {
+  h1 {
+    font-size: 3rem;
+  }
   h2 {
-    font-size: 2em; 
-  } 
-  .invite { 
-    width:90%;
-  } 
-#decrypt-button, #shift-number {
+    font-size: 2em;
+  }
+  .invite {
+    width: 90%;
+  }
+
+  #decrypt-button,
+  #shift-number {
     width: calc(100% - 24px);
   }
 }
-.yellowfont{
+.yellowfont {
   color: #d6aa66;
 }
 
@@ -68,12 +76,12 @@ section {
 
 button {
   background-color: #d6aa66;
-  color: #2c2a29; 
+  color: #2c2a29;
   width: calc(30% - 24px);
   border: none;
   padding: 20px;
   border-radius: 5px;
-  cursor: pointer; 
+  cursor: pointer;
   color: #fff; /* White text */
   font-size: 1em;
   transition: all 0.3s;
@@ -83,12 +91,12 @@ button:hover {
   background-color: #ffca7a;
 }
 input {
-    padding: 10px 20px;
-    margin: 20px 0;
-    border: 2px solid #ccc; 
-    text-align: center ;
-    border-radius: 5px;
-    width: calc(100% - 24px); /* Adjust width to account for padding and border */
-    font-size:12px;
-    box-sizing: border-box;
+  padding: 10px 20px;
+  margin: 20px 0;
+  border: 2px solid #ccc;
+  text-align: center;
+  border-radius: 5px;
+  width: calc(100% - 24px); /* Adjust width to account for padding and border */
+  font-size: 12px;
+  box-sizing: border-box;
 }
