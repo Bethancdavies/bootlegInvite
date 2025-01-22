@@ -40,7 +40,8 @@ h2 {
   color: #d6aa66;
 }
 
-p {
+p { 
+  font-size:1.5em;
   font-family: "Cinzel", serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -61,7 +62,8 @@ p {
     width: calc(100% - 24px);
   }
 }
-.yellowfont {
+.yellowfont,
+.cypherText {
   color: #d6aa66;
 }
 
