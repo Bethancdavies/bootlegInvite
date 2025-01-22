@@ -40,8 +40,8 @@ h2 {
   color: #d6aa66;
 }
 
-p { 
-  font-size:1.5em;
+p {
+  font-size: 1.5em;
   font-family: "Cinzel", serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -53,15 +53,20 @@ p {
   h2 {
     font-size: 2em;
   }
+  p {
+    font-size: 1em;
+  }
   .invite {
     width: 90%;
+    margin-top: 10px;
+}
   }
 
   #decrypt-button,
   #shift-number {
     width: calc(100% - 24px);
   }
-}
+
 .yellowfont,
 .cypherText {
   color: #d6aa66;
